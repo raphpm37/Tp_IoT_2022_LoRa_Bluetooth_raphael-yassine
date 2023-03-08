@@ -1,0 +1,5 @@
+Au cours de cette première séance, nous avons travaillé sur la carte ESP32 et nous avons réussi à utiliser les différents capteurs disponibles sur cette carte, notamment l'affichage, la mesure de température et d'humidité. Nous avons également appris comment envoyer les informations collectées à travers le protocole Mosquitto. Nous avons établi une connexion avec le serveur test.mosquitto.org et nous avons pu recevoir les informations collectées sur un ordinateur Linux.
+
+Par la suite, nous avons commencé à travailler sur l'aspect serveur/client avec le protocole LoRaWAN. Nous avons abordé les différentes étapes à suivre pour mettre en place une communication entre le serveur et le client en utilisant cette technologie.
+
+En conclusion, cette première journée de TP a été productive et nous avons pu acquérir de nouvelles compétences en matière de collecte et d'envoi d'informations à travers différents protocoles. Nous sommes impatients de poursuivre nos travaux sur le protocole LoRaWAN lors des prochaines séanc
