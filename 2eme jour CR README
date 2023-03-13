@@ -1,0 +1,13 @@
+TP1 : 
+Réception des informations températures et humidités depuis les capteurs sur une esp32. 
+TP2 : 
+Envoie et lecture des données via le protocole Msoquitto.
+TP3 : 
+Echange de donnée Lorawan avec un sender et un receiver. 
+
+Compte rendu du dernier TP :
+Schéma sur le git, pour plus de lisibilité
+Pour le dernier TP, nous avons voulu mettre en place un cas d’utilisation. Ce dernier est représenté au sein du schéma. 
+Schéma du cas d’utilisation
+L'objectif de ce TP était de concevoir une carte "sender" capable de transmettre une donnée de température via Lorawan dans un environnement sans accès internet, comme en pleine mer. Ensuite, un serveur a été mis en place pour recevoir la température et convertir la donnée en "char", afin de l'envoyer via Mosquitto sur internet. Cela permet à quiconque, n'importe où dans le monde, de recevoir la donnée, de la convertir en "int" et de lire la température via un accès internet (et Mosquitto). 
+Tous les fichiers nécessaires pour le sender et le receiver (serveur) sont disponibles sur ce dépôt Git, avec des commentaires pour faciliter la compréhension.
