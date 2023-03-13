@@ -17,4 +17,15 @@ comme en pleine mer. Ensuite, un serveur a été mis en place pour recevoir la t
 afin de l'envoyer via Mosquitto sur internet. Cela permet à quiconque, n'importe où dans le monde, de recevoir la donnée, de la convertir en "int" 
 et de lire la température via un accès internet (et Mosquitto). 
 
-Tous les fichiers nécessaires pour le sender et le receiver (serveur) sont disponibles sur ce dépôt Git, avec des commentaires pour faciliter la compréhension.
+Tous les fichiers nécessaires pour le sender et le receiver (serveur) sont disponibles sur ce dépôt Git.
+
+Void setup : 
+Tout d'abord, nous configurons le Wifi afin que Mosquitto puisse accéder à Internet, puis nous initialisons SPIE et l'antenne Lora aux fréquences, spreading factors et bandes passantes souhaitées.
+
+Void loop : 
+Le cœur du programme se trouve dans la boucle "void loop", 
+qui correspond au code principal et s'exécute en boucle (d'où la présence de délais).
+
+Dans le "main" du récepteur, nous recevons le paquet Lora avec la valeur 
+de RSSI (puissance du signal), puis nous convertissons cette valeur en caractère (char) 
+afin de pouvoir l'envoyer à Mosquitto à l'aide de la fonction "client.publish".
