@@ -20,3 +20,7 @@
 
 ### 3. Refaire la partie cliente pour répondre au bluetooth
 
+1 : Raphael Pierre-Michel
+2 : Yassine Benjeddi
+
+voir dossier pour CR
